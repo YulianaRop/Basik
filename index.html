@@ -1,13 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Головна</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link href="css/main.css" rel="stylesheet">
-    <style media="all">@import url(css/common.css);</style>
-    
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="css/main.css" rel="stylesheet" />
+    <style media="all">
+      @import url(css/common.css);
+    </style>
+
     <!-- @import url("my-imported-styles.css");
     * {
         margin: 0;
@@ -16,71 +24,118 @@
       /* more styles */
       
        Не вірно оголошувати @import після стилів - у такому випадку він є недійсним і буде ігноруватись-->
-</head>
-<body>
+  </head>
+  <body>
     <nav>
-        <uL>
+      <ul>
         <li><a href="index.html">Головна</a></li>
         <li><a href="about.html">Про нас</a></li>
         <li><a href="catalog.html">Каталог</a></li>
         <li><a href="contacts.html">Контакти</a></li>
-        </uL>
+      </ul>
     </nav>
 
     <header>
-        <h1>Головна</h1>
+      <nav>
+        <!-- navigation -->
+        <a href="index.html">Home</a>
+        <a href="catalog.html">Catalog</a>
+        <a href="blog.html">Blog</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <nav>
+        <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+        <a href="cart.html"><i class="fa-solid fa-heart"></i></a>
+        <a href="#!"><i class="fa-solid fa-user"></i></a>
+      </nav>
+      <h1>Головна</h1>
     </header>
-        
+
     <footer>
-        Більше інформації на  <a href="https://www.google.ua" target="_blank">Google</a>
+      Більше інформації на
+      <a href="https://www.google.ua" target="_blank">Google</a>
 
-        <!--Відредагувати розділ footer-->
-        
-            <section>
-             <div>
-        
-                <h2>About</h2>
-             <ul>
-       
-                  <li><a href="#">Portfolio</a></li>
-                  <li><a href="#">Pricing</a></li>
-                  <li><a href="#">Customers</a></li>
-                  <li><a href="#">Careers</a></li>
-                </ul>
-            </div>
-           
-           <div>
-                <h2>Resources</h2>
-             <ul> 
-                  <li><a href="#">Docs</a></li>
-                  <li><a href="#">Blog</a></li>
-                  <li><a href="#">eBooks</a></li>
-                  <li><a href="#">Webinars</a></li>
-             </ul>
-           </div>
-          
-           <div>
-                <h2>Contact</h2>
-             <ul> 
-                <li><a href="#">Help</a></li>
-                <li><a href="#">Sales</a></li>
-                <li><a href="#">Advertise</a></li>
-             </ul>
-           </div>
-            </section>
-               
-            <section>
-            <ul>
-                <li><a href="#">Terms &amp; Conditions</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-            </ul>
-    
+      <!--Відредагувати розділ footer-->
+
+      <section>
+        <div>
+          <h2>About</h2>
+          <ul>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Customers</a></li>
+            <li><a href="#">Careers</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h2>Resources</h2>
+          <ul>
+            <li><a href="#">Docs</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">eBooks</a></li>
+            <li><a href="#">Webinars</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h2>Contact</h2>
+          <ul>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Sales</a></li>
+            <li><a href="#">Advertise</a></li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <ul>
+          <li><a href="#">Terms &amp; Conditions</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+
         &copy; 2024 Copyright Shopaholic Inc.
-                
-            </section>    
-          
-
+      </section>
+      <section class="footer-social">
+        <ul class="list-unstyles">
+          <li>
+            <a href="https://www.facebook.com/"
+              ><i class="fab fa-facebook"></i>Facebook</a
+            >
+          </li>
+          <li>
+            <a href="https://twitter.com/"
+              ><i class="fab fa-twitter"></i>Twitter</a
+            >
+          </li>
+          <li>
+            <a href="https://github.com/"
+              ><i class="fab fa-github"></i>Github</a
+            >
+          </li>
+          <li>
+            <a href="https://www.linkedin.com"
+              ><i class="fab fa-linkedin"></i>LinkedIn</a
+            >
+          </li>
+          <li>
+            <a href="https://www.youtube.com/"
+              ><i class="fab fa-youtube"></i>Youtube</a
+            >
+          </li>
+          <li>
+            <a href="https://www.instagram.com"
+              ><i class="fab fa-instagram"></i>Instagram</a
+            >
+          </li>
+        </ul>
+      </section>
     </footer>
-    
-</body>
+    <script
+      src="https://kit.fontawesome.com/c921331d9d.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
