@@ -1,0 +1,79 @@
+a {
+  color: indigo;
+}
+a:visited {
+  color: gold;
+}
+a:hover {
+  color: salmon;
+}
+
+a:active {
+  color: red;
+}
+a:focus {
+  color: orange;
+}
+
+input:in-range {
+  background-color: rgba(0, 255, 0, 0.25);
+}
+
+input:out-of-range {
+  background-color: rgb(255 0 0 / 25%);
+}
+
+/*Завдання №4*/
+li:first-child {
+  color: orange;
+}
+/*+до завдання №5*/
+span:first-of-type {
+  color: orange;
+}
+
+/*+до завдання №6*/
+li:last-of-type {
+  color: orange;
+}
+
+span:last-of-type {
+  color: orange;
+}
+
+/*
+li:not(.first-item) {
+  color: orange;
+}
+
+/*Завдання №7*/
+li:not(.last-item),
+.first-item {
+  color: black;
+  background: yellow;
+}
+
+/*Завдання №8*/
+li:nth-child(2) {
+  color: orange;
+}
+
+li:nth-child(2n) {
+  color: orange;
+}
+
+li:nth-child(2n + 6) {
+  color: orange;
+}
+/*Завдання №9*/
+h1.ua::before {
+  content: "Слава";
+}
+/*Завдання №10*/
+h1.hero::after {
+  content: " Слава";
+}
+/*Завдання №11*/
+.cont::before {
+  content: "\0A7";
+}
