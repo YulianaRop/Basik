@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+    <style>
+      /*- Встановити background для класу negative як лінійний градієнт, що напрвлений вліво, та моє такі точки 
+        зупинки: -50%, -10%, 0%, 100%, 150%. Для кожної точки зупинки встановити колір, що змінюється від світлосинього 
+        до темносинього.  */
+      .negative {
+        background: linear-gradient(
+          to left,
+          #add8e6 -50%,
+          #0000ff -10%,
+          #0000ff 0%,
+          #00008b 100%,
+          #00008b 150%
+        );
+
+        /*- Встановити background для класу percents як лінійний градієнт, що напрвлений вниз, та моє такі точки 
+        зупинки: 2em, 4em, 8em, 16em, 32em, 64em, 128em. Для кожної точки зупинки встановити колір, що змінюється 
+        від світлозеленого до темнозеленого. */
+      }
+      .percents {
+        background: linear-gradient(
+          to bottom,
+          #bad6c0 2em,
+          #6ba577 4em,
+          #499c59 8em,
+          #2a863c 16em,
+          #156b26 32em,
+          #074b15 64em,
+          #002e0a 128em
+        );
+      }
+
+      /*Встановити background для класу radial два радіальних градієнта з типом 
+      ellipse, перший з яких містить 2 кольори - помаранчевмй та прозорий 
+      і напрвлений вверх, а другий містить 2 кольори - червонмй та прозорий і напрвлений вниз.*/
+
+      .radial {
+        background: radial-gradient(ellipse at top, orange, transparent);
+        background: radial-gradient(ellipse at bottom, red, transparent);
+      }
+    </style>
+  </head>
+
+  <body class="body">
+    <h1>Gradient Text Glow</h1>
+
+    <div class="percents">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis cum magnam
+      quae adipisci minima illum porro eius ipsa rem. Sequi eaque facere
+      necessitatibus fugiat rerum facilis reprehenderit numquam dignissimos
+      itaque!
+    </div>
+
+    <div class="negative">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis cum magnam
+      quae adipisci minima illum porro eius ipsa rem. Sequi eaque facere
+      necessitatibus fugiat rerum facilis reprehenderit numquam dignissimos
+      itaque!
+    </div>
+
+    <div class="radial">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis cum magnam
+      quae adipisci minima illum porro eius ipsa rem. Sequi eaque facere
+      necessitatibus fugiat rerum facilis reprehenderit numquam dignissimos
+      itaque!
+    </div>
+
+    <!--Створити svg-прямокутник розміром 100х100 з координатами 20,20 20, 20. 
+        Для обрамлення встановити колір #1c87c9 та товщину лінії 4. Встановити фон 
+        прямокутника lightgray.-->
+
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="200"
+      height="200"
+      viewBox="0 0 200 200"
+    >
+      <rect
+        x="20"
+        y="20"
+        rx="20"
+        ry="20"
+        width="100"
+        height="100"
+        fill="lightgray"
+        stroke="#1c87c9"
+        stroke-width="4"
+      />
+    </svg>
+
+    <!--Стаорити svg-коло розміром 200х200 радіусом = 60 та центром з координатами 
+        100, 70. Для обрамлення встановити червоний колір та товщину лінії 4. 
+        Встановити фон кола lightgray.-->
+
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="200"
+      height="200"
+      viewBox="0 0 200 200"
+    >
+      <circle
+        width="200"
+        height="200"
+        cx="100"
+        cy="70"
+        r="60"
+        fill="lightgray"
+        stroke="red"
+        stroke-width="4"
+      ></circle>
+    </svg>
+
+    <!--Створити svg-малюнок годинника, що показує час = 3 години-->
+
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="200"
+      height="200"
+      viewBox="0 0 200 200"
+    >
+      <circle
+        cx="100"
+        cy="100"
+        r="90"
+        stroke="black"
+        stroke-width="2"
+        fill="white"
+      />
+
+      <circle cx="100" cy="100" r="5" fill="black" />
+
+      <line
+        x1="100"
+        y1="100"
+        x2="100"
+        y2="60"
+        stroke="black"
+        stroke-width="4"
+        transform="rotate(90,100,100)"
+      />
+      <line
+        x1="100"
+        y1="100"
+        x2="100"
+        y2="40"
+        stroke="black"
+        stroke-width="4"
+        transform="rotate(0,100,100)"
+      />
+
+      <line
+        x1="100"
+        y1="10"
+        x2="100"
+        y2="20"
+        stroke="black"
+        stroke-width="2"
+        transform="rotate(90,100,100)"
+      />
+    </svg>
+
+    <!--Створити svg-малюнок зірки-->
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="100"
+      height="100"
+      viewBox="0 0 200 200"
+    >
+      <polygon points="100,10 40,198 190,78 10,78 160,198" fill="blueviolet" />
+    </svg>
+  </body>
+</html>
