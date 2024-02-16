@@ -1,46 +1,49 @@
 /*Завдання №2*/
-h1, h2, h3 {
-    color: grey;
+h1,
+h2,
+h3 {
+  color: grey;
 }
 
 #main {
-    color: #e60202;
+  color: #e60202;
 }
 
 .h2 {
-    color: red;
+  color: red;
 }
 
 .heading {
-    color: green;
+  color: green;
 }
 
 /*Завдання №3*/
 li {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 section > p {
-    color: red;
+  color: red;
 }
 /*- Чи зміниться колір тексту p всередині елемента div?
     Відповідь: ні, не зміниться, тому що новий колір присвоїться тільки дочірнім елементам елементу p
+
 - змінити розмір шрифту всіх елементів p всередині елемента section, незалежно від їхнього рівня вкладеності.*/
-section ~ p {
-    font-size: large;
+section p {
+  font-size: large;
 }
 /*Завдання 4*/
-.first {
-    color: indigo;
+body > h2:first-of-type {
+  color: indigo;
 }
 /*- застосувати до всіх посилань, нащадкам p.first властивість color: green */
-p .first   {
-    color: green;
+p.first a {
+  color: green;
 }
 
 /*- створити стиль color: salmon для всіх елементів p, що стоять після елемента div.*/
 div ~ p {
-    color: salmon;
+  color: salmon;
 }
 /**Завдання №5
 Маємо іменовані кольори black, blue, green, red, white, yellow
@@ -51,45 +54,45 @@ div ~ p {
 визначати ці кольори використовуючи альфа-канал, що задає прозорість.*/
 
 .black {
-    color: #000000;
-    color: rgb(rgb(0, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0));
-    color: hsl(0%, 0%, 0%);
-    color: rgba rgb(0, 0, 0, 0.5);
+  color: #000000;
+  color: rgb(rgb(0, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0));
+  color: hsl(0%, 0%, 0%);
+  color: rgba rgb(0, 0, 0, 0.5);
 }
 
 .blue {
-    color: #0000ff;
-    color: rgb(0, 0, 255);
-    color: hsl(240, 100%, 50%);
-    color: rgba(0, 0, 255, 0.5);
+  color: #0000ff;
+  color: rgb(0, 0, 255);
+  color: hsl(240, 100%, 50%);
+  color: rgba(0, 0, 255, 0.5);
 }
 
 .green {
-    color: #008000;
-    color: rgb(0, 128, 0);
-    color: hsl(120, 100%, 25%);
-    color: rgba(0, 128, 0, 0.5);
+  color: #008000;
+  color: rgb(0, 128, 0);
+  color: hsl(120, 100%, 25%);
+  color: rgba(0, 128, 0, 0.5);
 }
 
 .red {
-    color: #ff0000;
-    color: rgb(255, 0, 0);
-    color: hsl(0, 100%, 50%);
-    color: rgba(255, 0, 0, 0.5);
+  color: #ff0000;
+  color: rgb(255, 0, 0);
+  color: hsl(0, 100%, 50%);
+  color: rgba(255, 0, 0, 0.5);
 }
 
 .white {
-    color: #ffffff;
-    color: rgb(255, 255, 255);
-    color: hsl(0, 0%, 100%);
-    color: rgba(255, 255, 255, 0.5);
+  color: #ffffff;
+  color: rgb(255, 255, 255);
+  color: hsl(0, 0%, 100%);
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .yellow {
-    color: #ffff00;
-    color: rgb(255, 255, 0);
-    color: hsl(60, 100%, 50%);
-    color: rgba(255, 255, 0, 0.5);
+  color: #ffff00;
+  color: rgb(255, 255, 0);
+  color: hsl(60, 100%, 50%);
+  color: rgba(255, 255, 0, 0.5);
 }
 
 /*Завдання №6
@@ -98,18 +101,16 @@ div ~ p {
     - Saturate =  100%
     - Lightness =  50%*/
 
-    .translucent-box {
-        background-color: hsl(0, 100%, 50%);
-        height: 10px;
-    }
-    /*Завдання №7
+.translucent-box {
+  background-color: hsl(0, 100%, 50%);
+  height: 10px;
+}
+/*Завдання №7
     визначити розмір шрифта для body, що успадковує розмір шрифта кореневого елемента, збільшений на 40 відсотків*/
-     body {
-        font-size: 140%;
-     }
-     /*визначити розмір шрифта для body, що успадковує розмір шрифта кореневого елемента, збільшений на 40 відсотків*/
-     h1 {
-        font-size: 240%;
-     }
-
-
+body {
+  font-size: 140%;
+}
+/*визначити розмір шрифта для body, що успадковує розмір шрифта кореневого елемента, збільшений на 40 відсотків*/
+h1 {
+  font-size: 240%;
+}
