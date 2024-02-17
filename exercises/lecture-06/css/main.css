@@ -33,20 +33,21 @@ span:first-of-type {
 }
 
 /*+до завдання №6*/
-li:last-of-type {
+ul:last-of-type {
   color: orange;
 }
 
 span:last-of-type {
   color: orange;
 }
+/*Завдання №7*/
 
 /*
 li:not(.first-item) {
   color: orange;
 }
 
-/*Завдання №7*/
+
 li:not(.last-item),
 .first-item {
   color: black;
@@ -54,15 +55,15 @@ li:not(.last-item),
 }
 
 /*Завдання №8*/
-li:nth-child(2) {
+ol:nth-child(2) {
   color: orange;
 }
 
-li:nth-child(2n) {
+ol:nth-child(2n) {
   color: orange;
 }
 
-li:nth-child(2n + 6) {
+ol:nth-child(2n + 6) {
   color: orange;
 }
 /*Завдання №9*/
@@ -74,6 +75,6 @@ h1.hero::after {
   content: " Слава";
 }
 /*Завдання №11*/
-.cont::before {
+p.cont::before {
   content: "\0A7";
 }
