@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Document</title>
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+    <style>
+      .wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        width: 700px;
+      }
+
+      .item-blue {
+        background-color: blue;
+        /*Встановіть для елемента blue фактор зростання 3*/
+        flex-grow: 3;
+      }
+      .item-orange {
+        background-color: orange;
+      }
+      .item-green {
+        background-color: green;
+        /*Встановіть для елемента green фактор зростання 1*/
+        flex-grow: 1;
+      }
+      /*Розрахуйте в пікселях ширину кожного з елементів item-green, item-orange, item-blue*
+      Рішення: сума блакитного, помаранчевого та зеленого елементів - 100+100+100=300px, різниця між загальною шириною та цими елементами - 700-300=400px, сума факторів зростання - 3+0+1=4, 
+      ширина зеленого елементу: 1/4*400+100=200px
+      ширина блакитного елементу: 3/4*400+100=400px
+      ширина помаранчевого елементу: 0/4*400+100=100px*/
+
+      .item {
+        color: white;
+        width: 100px;
+        /*- розподілити простір між елементами flex так, щоб вони мали однакову ширину та заповнювали весь доступний
+          простір. Закоментуйте цей рядок.
+        flex-grow: 1;*/
+      }
+    </style>
+  </head>
+  <body>
+    <h2>CSS Flex Property</h2>
+    <div class="wrapper">
+      <div class="item item-blue">CSS</div>
+      <div class="item item-orange">Flex</div>
+      <div class="item item-green">Property</div>
+    </div>
+  </body>
+</html>
