@@ -77,28 +77,28 @@ function greeting(firstName, lastName) {
 console.log(greeting(firstName, lastName));
 
 
-let string1 = "  The name of our game  ";
+let string1 = "The name of our game";
 
 // Потрібно отримати такі результати
 // "The name of our game"
 // "The name of our game  "
 // "  The name of our game"
 
-let result1 = string1.trim();
-let result2 = string1.trimStart()
-let result3 = string1.trimeEnd()
+let result1 = string1.trim(); // "The name of our game"
+let result2 = string1.trimEnd(); // "The name of our game "
+let result3 = string1.trimStart(); // " The name of our game"
 
 console.log(result1);
 console.log(result2);
 console.log(result3);
 
-const phoneNumber = '\t  555-123\n ';
+const phoneNumber = '\t 555-123\n ';
 // Потрібно отримати такі результати
 // => '555-123'
 // => '555-123 \n'
 
-const example1 = phoneNumber.trim();
-const example2 = phoneNumber.trimLeft();
+let example1 = phoneNumber.trim(); // '555-123'
+let example2 = phoneNumber.trimEnd(); // ' 555-123 \n'
 
 console.log(example1);
 console.log(example2);
